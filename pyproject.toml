@@ -7,9 +7,12 @@ name = "monce"
 version = "0.1.0"
 description = "Question your data. Snake-powered DataFrame intelligence."
 requires-python = ">=3.9"
-license = "Proprietary"
-authors = [{name = "Charles Dana", email = "charles@monce.ai"}]
-dependencies = ["algorithmeai"]
+license = "LicenseRef-Proprietary"
+authors = [{name = "Charles Dana", email = "cdana@monce.ai"}]
+dependencies = []
 
 [project.urls]
 Homepage = "https://monce.ai"
+
+[tool.hatch.build.targets.wheel]
+packages = ["monce", "algorithmeai"]
